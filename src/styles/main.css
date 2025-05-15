@@ -1,0 +1,9 @@
+@import './global/_colors.css';
+@import './global/_fonts.css';
+@import './global/typography.css';
+@import './global/reset.css';
+@import './components/elements.css';
+@import './components/auth.css';
+@import './components/sidebar.css';
+@import './components/currency.css';
+

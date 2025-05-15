@@ -1,0 +1,100 @@
+:root {
+  /* === CUSTOM === */
+  --color-primary-text: #161846;
+
+  /* === SYSTEM COLORS === */
+  --color-system-red: #ff3b30;
+  --color-system-red-dark: #ff453a;
+
+  --color-system-orange: #ff9500;
+  --color-system-orange-dark: #ff9f0a;
+
+  --color-system-yellow: #ffcc00;
+  --color-system-yellow-dark: #ffd60a;
+
+  --color-system-green: #34c759;
+  --color-system-green-dark: #30d158;
+
+  --color-system-mint: #00c7be;
+  --color-system-mint-dark: #63e6e2;
+
+  --color-system-teal: #30b0c7;
+  --color-system-teal-dark: #40c8e0;
+
+  --color-system-cyan: #32ade6;
+  --color-system-cyan-dark: #64d2ff;
+
+  --color-system-blue: #007aff;
+  --color-system-blue-8: #007AFF14;
+  --color-system-blue-16: #007AFF29;
+  --color-system-blue-dark: #0a84ff;
+
+  --color-system-indigo: #5856d6;
+  --color-system-indigo-dark: #5e5ce6;
+
+  --color-system-purple: #af52de;
+  --color-system-purple-dark: #bf5af2;
+
+  --color-system-pink: #ff2d55;
+  --color-system-pink-dark: #ff375f;
+
+  --color-system-brown: #a2845e;
+  --color-system-brown-dark: #ac8e68;
+
+  /* === LABEL COLORS === */
+  --label-primary: #000000;
+  --label-secondary: #3C3C4399;
+  --label-tertiary: #3c3c434d;
+  --label-quaternary: #3c3c4330;
+
+  --label-vibrant-primary: #000000;
+  --label-vibrant-secondary: #3d3d3dff;
+  --label-vibrant-tertiary: #3d3d3d80;
+  --label-vibrant-quaternary: #3d3d3d33;
+
+  /* === LABEL COLORS — DARK === */
+  --label-primary-dark: #ffffff;
+  --label-secondary-dark: #ebebf599;
+  --label-tertiary-dark: #ebebf54d;
+  --label-quaternary-dark: #ebebf528;
+
+  --label-vibrant-primary-dark: #ffffff;
+  --label-vibrant-secondary-dark: #c2c2c2ff;
+  --label-vibrant-tertiary-dark: #c2c2c280;
+  --label-vibrant-quaternary-dark: #c2c2c24d;
+
+  /* === GRAYS === */
+  --gray-tabbar-false-light: #999999;
+  --gray: #8e8e93;
+  --gray-2: #aeaeb2;
+  --gray-3: #c7c7cc;
+  --gray-4: #d1d1d6;
+  --gray-5: #e5e5ea;
+  --gray-6: #f2f2f7;
+
+  --gray-black: #000000;
+  --gray-white: #ffffff;
+
+  /* === GRAYS — DARK === */
+  --gray-dark: #8e8e93;
+  --gray-2-dark: #636366;
+  --gray-3-dark: #48484a;
+  --gray-4-dark: #3a3a3c;
+  --gray-5-dark: #2c2c2e;
+  --gray-6-dark: #1c1c1e;
+  --gray-black-dark: #000000;
+  --gray-white-dark: #ffffff;
+
+  /* === BACKGROUND COLORS === */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f2f2f7;
+  --bg-tertiary: #ffffff;
+
+  --bg-primary-dark-elevated: #1c1c1e;
+  --bg-secondary-dark-elevated: #2c2c2e;
+  --bg-tertiary-dark-elevated: #3a3a3c;
+
+  --bg-primary-dark-base: #000000;
+  --bg-secondary-dark-base: #1c1c1e;
+  --bg-tertiary-dark-base: #2c2c2e;
+}

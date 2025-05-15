@@ -1,0 +1,32 @@
+.gray svg {
+  fill: var(--label-tertiary);
+}
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+.auth-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 310px;
+  color: var(--color-primary-text);
+
+  @media (max-width: 575px) {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+.auth-title{
+  margin-bottom: 8px;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

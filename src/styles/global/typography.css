@@ -1,0 +1,139 @@
+:root {
+  --font-family-default: "SF Pro Display", sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-heavy: 800;
+  --ls-tight: -0.4px;
+  --ls-very-tight: -1px;
+  --ls-normal: 0px;
+}
+
+.big-title {
+  font-family: var(--font-family-default), sans-serif;
+  font-size: 80px;
+  line-height: 95px;
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-very-tight);
+}
+
+.onboarding-title {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: var(--fw-heavy);
+  letter-spacing: var(--ls-tight);
+}
+
+.large-title {
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.large-title-bold {
+  font-weight: var(--fw-bold);
+}
+
+.title1 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.title1-bold {
+  font-weight: var(--fw-bold);
+}
+
+.title2 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.title2-bold {
+  font-weight: var(--fw-bold);
+}
+
+.title3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.title3-bold {
+  font-weight: var(--fw-bold);
+}
+
+.headline {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-tight);
+}
+
+.body {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.body-semibold {
+  font-weight: var(--fw-semibold);
+}
+
+.callout {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.callout-bold {
+  font-weight: var(--fw-bold);
+}
+
+.subheadline {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.subheadline-bold {
+  font-weight: var(--fw-bold);
+}
+
+.footnote {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.footnote-semibold {
+  font-weight: var(--fw-semibold);
+}
+.caption1 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.caption1-bold {
+  font-weight: var(--fw-bold);
+}
+
+.caption2 {
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-tight);
+}
+.caption2-bold {
+  font-weight: var(--fw-bold);
+}
+
+.caption-tabbar {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-normal);
+}

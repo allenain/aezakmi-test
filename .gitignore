@@ -1,0 +1,36 @@
+# node_modules
+node_modules/
+
+# build output
+dist/
+build/
+
+# dotenv
+.env
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Mac system files
+._*
+
+# Optional: log/coverage/temp/test
+coverage/
+*.log
+*.tmp
+*.swp
+
+# Optional: system files
+*.bak
+*.orig
+*.sublime-workspace
