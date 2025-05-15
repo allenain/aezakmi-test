@@ -22,20 +22,6 @@ const appConstants = {
     SELL_MARKUP: 0.02,
     BUY_DISCOUNT: 0.015,
   },
-  pages: {
-    titles: {
-      currency: "Курс валют",
-      video: "Видео",
-      timer: "Таймер",
-    },
-  },
-
-  search: {
-    types: {
-      post: "post",
-      user: "user",
-    },
-  },
 };
 
 export default appConstants;

@@ -231,6 +231,10 @@ display: flex;
 .tables-titles{
   display: flex;
   width: 100%;
+  gap: 24px;
+  @media (max-width: 1520px) {
+    gap: 0;
+  }
   @media (max-width: 1220px) {
     display: none;
   }
