@@ -13,7 +13,7 @@ const AuthPage = `
       <form class="auth-form">
         ${Input("text", "Email Address", messageIcon, "gray")}
         ${Input("password", "Password", securityIcon, "gray", "password1")}
-        ${Button("Login", "dark")}
+        ${Button("Login")}
       </form>
     </div>
   </section>

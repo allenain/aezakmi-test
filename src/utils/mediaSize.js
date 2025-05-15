@@ -9,7 +9,7 @@ const mediaSize = {
 
 function updateMediaFlags() {
   const width = window.innerWidth;
-  mediaSize.isXl = width <= 1504;
+  mediaSize.isXl = width <= 1520;
   mediaSize.isLgm = width <= 1220;
   mediaSize.isLg = width <= 991;
   mediaSize.isMd = width <= 767;

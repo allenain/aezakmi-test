@@ -1,0 +1,106 @@
+.timer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  @media (max-width: 991px) {
+    padding-top: 44px;
+  }
+}
+
+.timer-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--color-system-blue-8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 380px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+.timer-icon svg {
+  fill: var(--color-primary-text);
+  width: 140px;
+  height: 140px;
+}
+@keyframes hourglass-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.timer-icon svg {
+  width: 120px;
+  height: 120px;
+  transform-origin: center;
+}
+
+.time-numbers {
+  display: flex;
+  gap: 24px;
+  padding: 144px 0 32px;
+  @media (max-width: 380px) {
+    gap: 4px;
+    padding: 60px 0 24px;
+  }
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary-text);
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 16px;
+  @media (max-width: 575px) {
+    width: 100%;
+    gap: 8px;
+  }
+}
+.timer-buttons div {
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+.timer-buttons button {
+  width: 226px;
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+.time-select {
+  appearance: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 140px;
+  padding: 16px 48px;
+  background-color: var(--color-system-blue-8);
+  border-radius: 24px;
+  color: var(--label-tertiary);
+  @media (max-width: 575px) {
+    width: 100%;
+    padding: 10px 24px;
+  }
+  &.has-value {
+    color: var(--color-primary-text);
+  }
+}
+
+.time-select option {
+  color: var(--color-primary-text);
+  background: var(--label-primary-dark);
+  font-size: 20px;
+}

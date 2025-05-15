@@ -1,13 +1,15 @@
 import appConstants from "../common/constants.js";
 import { checkTokenOrRedirect } from "../utils/checkToken.js";
 import Sidebar, { updateActiveNav } from "../components/Sidebar.js";
-import initAuthPage from "../pages/auth.js";
-
+import initAuthPage from "../scripts/auth.js";
 import AuthPage from "../pages/auth.template.js";
 import CurrencyPage from "../pages/currency.template.js";
 import VideoPage from "../pages/video.template.js";
 import TimerPage from "../pages/timer.template.js";
-import initCurrencyPage from "../pages/currency";
+import initCurrencyPage from "../scripts/coursesCurrency";
+import initConverter from "../scripts/converterCurrency";
+import initVideoPage from "../scripts/video";
+import initTimer from "../scripts/timer";
 
 checkTokenOrRedirect();
 
@@ -43,12 +45,32 @@ export function render(path) {
   } else {
     document.querySelector(".main").innerHTML = pageHtml;
   }
+  const logoutLink = document.querySelector(".logout");
 
+  if (logoutLink) {
+    logoutLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      logout();
+    });
+  }
   updateActiveNav(path);
-  initCurrencyPage();
+  if (path === "/currency") {
+    initCurrencyPage();
+    initConverter();
+  }
+  if (path === "/video") {
+    initVideoPage();
+  }
+  if (path === "/timer") {
+    initTimer();
+  }
 }
 
-export function goTo(path) {
+function logout() {
+  localStorage.removeItem("accessToken");
+  localStorage.removeItem("tokenExpires");
+}
+function goTo(path) {
   window.history.pushState({}, "", path);
   render(path);
 }

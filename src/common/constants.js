@@ -18,6 +18,10 @@ const appConstants = {
     ttlMs: 60 * 60 * 1000,
   },
 
+  currency: {
+    SELL_MARKUP: 0.02,
+    BUY_DISCOUNT: 0.015,
+  },
   pages: {
     titles: {
       currency: "Курс валют",

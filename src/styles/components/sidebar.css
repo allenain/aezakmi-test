@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 32px;
-  @media (max-width: 1220px) {
+  @media (max-width: 1520px) {
     width: max-content;
     padding: 30px 15px;
   }
@@ -49,6 +49,16 @@
   fill: currentColor;
 }
 
+@media (max-width: 1520px) {
+  .nav-text {
+    display: none;
+  }
+
+  .nav-item {
+    width: max-content;
+    padding: 10px;
+  }
+}
 @media (max-width: 991px) {
   .layout {
     display: block;
@@ -60,6 +70,7 @@
     width: 100%;
     flex-direction: row;
     padding: 10px;
+    background-color: var(--label-primary-dark);
   }
   .sidebar-top {
     flex-direction: row;
@@ -70,11 +81,6 @@
   .nav {
     flex-direction: row;
   }
-  .nav-text {
-    display: none;
-  }
-  .nav-item {
-    width: max-content;
-    padding: 10px;
-  }
+
 }
+

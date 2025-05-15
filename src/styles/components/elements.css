@@ -51,20 +51,20 @@
 
 
 .app-button {
-    height: 50px;
     border-radius: 100px;
     padding: 14px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
-    font-size: 17px;
-    font-weight: var(--fw-regular);
-    line-height: 22px;
     color: var(--label-primary-dark);
     border: none;
     cursor: pointer;
     transition: background 0.2s ease;
+}
+.app-button:disabled{
+    background: var(--label-quaternary);
+    color: var(--label-primary-dark);
 }
 
 .app-button--dark {
@@ -86,7 +86,7 @@
 }
 
 
-.white-card {
+.white-container {
     background: var(--label-primary-dark);
     border-radius: 40px;
     padding: 40px;
@@ -95,19 +95,21 @@
     max-width: 100%;
     box-sizing: border-box;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     @media (max-width: 991px) {
         padding: 20px;
         border-radius: 0;
+        box-shadow: none;
+        background-color: transparent;
     }
 }
 
-.white-card__header {
+.white-container__header {
     color: var(--color-primary-text);
-}
-
-.card-header-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.white-container__content{
+    height: 100%;
+    overflow: auto;
 }
