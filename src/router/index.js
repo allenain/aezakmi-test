@@ -32,7 +32,8 @@ export function render(path) {
   if (!proceed) return;
   const pageHtml = routes[path] ?? "<h1>404 – Not found</h1>";
 
-  const isPublic = path === "/" || path === "/auth";
+  const isPublic =
+    path === appConstants.routes.index || path === appConstants.routes.auth;
 
   if (isPublic) {
     document.querySelector("#app").innerHTML = pageHtml;
@@ -55,14 +56,14 @@ export function render(path) {
     });
   }
   updateActiveNav(path);
-  if (path === "/currency") {
+  if (path === appConstants.routes.currency) {
     initCurrencyPage();
     initConverter();
   }
-  if (path === "/video") {
+  if (path === appConstants.routes.video) {
     initVideoPage();
   }
-  if (path === "/timer") {
+  if (path === appConstants.routes.timer) {
     initTimer();
   }
 }
