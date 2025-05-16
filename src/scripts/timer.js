@@ -1,8 +1,8 @@
 const initTimer = () => {
   const selects = document.querySelectorAll(".time-select");
-  const resetBtn = document.querySelector(".app-button--red");
+  const resetBtn = document.querySelector(".app-button__red");
   const startBtn = document.querySelector(
-    ".timer-buttons .app-button:not(.app-button--red)",
+    ".timer-buttons .app-button:not(.app-button__red)",
   );
   const iconSvg = document.querySelector(".timer-icon svg");
 
