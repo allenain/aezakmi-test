@@ -3,11 +3,20 @@ import currenciesIcon from "!!raw-loader!../assets/icons/currencies.svg";
 import videoIcon from "!!raw-loader!../assets/icons/video.svg";
 import timerIcon from "!!raw-loader!../assets/icons/hourglass.svg";
 import exitIcon from "!!raw-loader!../assets/icons/exit.svg";
+import appConstants from "../common/constants.js";
 
 const NAV_ITEMS = [
-  { href: "/currency", icon: currenciesIcon, label: "Exchange rates" },
-  { href: "/video", icon: videoIcon, label: "Video player" },
-  { href: "/timer", icon: timerIcon, label: "Countdown timer" },
+  {
+    href: appConstants.routes.currency,
+    icon: currenciesIcon,
+    label: "Exchange rates",
+  },
+  { href: appConstants.routes.video, icon: videoIcon, label: "Video player" },
+  {
+    href: appConstants.routes.timer,
+    icon: timerIcon,
+    label: "Countdown timer",
+  },
 ];
 
 const Sidebar = (pageContent = "") => {
@@ -15,24 +24,24 @@ const Sidebar = (pageContent = "") => {
 
   const navHtml = NAV_ITEMS.map(
     ({ href, icon, label }) => `
-        <a href="${href}" class="nav-item ${current === href ? "active" : ""}">
-          <span class="input-icon nav-icon ${current === href ? "active" : ""}">${icon}</span>
-          <span class="nav-text body">${label}</span>
-        </a>`,
+      <a href="${href}" class="nav-item ${current === href ? "active" : ""}">
+        <span class="input-icon nav-icon ${current === href ? "active" : ""}">${icon}</span>
+        <span class="nav-text body">${label}</span>
+      </a>`,
   ).join("");
 
   return `
     <div class="layout">
       <aside class="sidebar">
         <div class="sidebar-top">
-        <div class="sidebar-top-logo">${Logo}</div>
+          <div class="sidebar-top-logo">${Logo}</div>
           <nav class="nav">
             ${navHtml}
           </nav>
         </div>
 
         <div class="sidebar-bottom">
-          <a href="/auth" class="nav-item logout">
+          <a href="${appConstants.routes.auth}" class="nav-item logout">
             <span class="input-icon">${exitIcon}</span>
             <span class="nav-text callout">Log out</span>
           </a>
