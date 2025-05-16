@@ -1,10 +1,13 @@
 {
+  "homepage": "https://allenain.github.io/aezakmi-test",
   "name": "aezakmi-test",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
   "devDependencies": {
     "css-loader": "^7.1.2",
     "dotenv": "^16.5.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "prettier": "^3.5.3",
     "raw-loader": "^4.0.2",
