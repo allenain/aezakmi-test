@@ -1,4 +1,6 @@
 import setupPasswordToggles from "../utils/setupPasswordToggles.js";
+import { goTo } from "../utils/goTo";
+import appConstants from "../common/constants";
 
 const VALID_CREDENTIALS = {
   login: "admin@example.com",
@@ -89,7 +91,7 @@ const initAuthPage = () => {
     const token = generateToken();
     saveToken(token);
 
-    window.location.href = "/currency";
+    goTo(appConstants.routes.currency);
   });
 };
 
