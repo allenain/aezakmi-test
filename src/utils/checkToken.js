@@ -9,7 +9,7 @@ export function checkTokenOrRedirect() {
   if (!isValid && !window.location.pathname.startsWith(`${BASE_PATH}/auth`)) {
     window.location.href = `${BASE_PATH}/auth`;
   }
-  if (isValid && isAuthPage) {
-    window.location.href = "/currency";
+  if (isValid && window.location.pathname === `${BASE_PATH}/auth`) {
+    window.location.href = `${BASE_PATH}/currency`;
   }
 }
