@@ -28,7 +28,8 @@ function mountLayout(initialContent) {
 }
 
 export function render(path) {
-  checkTokenOrRedirect();
+  const proceed = checkTokenOrRedirect();
+  if (!proceed) return;
   const pageHtml = routes[path] ?? "<h1>404 – Not found</h1>";
 
   const isPublic = path === "/" || path === "/auth";
