@@ -1,15 +1,26 @@
+import { goTo } from "./goTo";
+
 const BASE_PATH = "/aezakmi-test";
 
 export function checkTokenOrRedirect() {
   const token = localStorage.getItem("accessToken");
   const expires = localStorage.getItem("tokenExpires");
   const isValid = token && Date.now() < Number(expires);
-  const isAuthPage = window.location.pathname === "/auth";
 
-  if (!isValid && !window.location.pathname.startsWith(`${BASE_PATH}/auth`)) {
-    window.location.href = `${BASE_PATH}/auth`;
+  const currentPath = window.location.pathname;
+
+  const isOnAuth = currentPath.startsWith(`${BASE_PATH}/auth`);
+  const isOnPublic = currentPath === `${BASE_PATH}/` || isOnAuth;
+
+  if (!isValid && !isOnAuth) {
+    goTo(`${BASE_PATH}/auth`);
+    return false;
   }
-  if (isValid && window.location.pathname === `${BASE_PATH}/auth`) {
-    window.location.href = `${BASE_PATH}/currency`;
+
+  if (isValid && isOnAuth) {
+    goTo(`${BASE_PATH}/currency`);
+    return false;
   }
+
+  return true; // всё ок, можно продолжать
 }

@@ -69,10 +69,6 @@ function logout() {
   localStorage.removeItem("accessToken");
   localStorage.removeItem("tokenExpires");
 }
-function goTo(path) {
-  window.history.pushState({}, "", path);
-  render(path);
-}
 
 export default function initRouter() {
   window.addEventListener("popstate", () => render(window.location.pathname));
