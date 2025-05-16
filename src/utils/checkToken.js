@@ -22,5 +22,5 @@ export function checkTokenOrRedirect() {
     return false;
   }
 
-  return true; // всё ок, можно продолжать
+  return true;
 }

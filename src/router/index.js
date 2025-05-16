@@ -10,6 +10,7 @@ import initCurrencyPage from "../scripts/coursesCurrency";
 import initConverter from "../scripts/converterCurrency";
 import initVideoPage from "../scripts/video";
 import initTimer from "../scripts/timer";
+import { goTo } from "../utils/goTo";
 
 const routes = {
   [appConstants.routes.auth]: AuthPage,
