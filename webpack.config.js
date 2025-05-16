@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const dotenv = require("dotenv");
 const webpack = require("webpack");
 const env = dotenv.config().parsed;
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -25,6 +26,9 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       "process.env.CURRENCY_KEY": JSON.stringify(env.CURRENCY_KEY),
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "public/404.html", to: "404.html" }],
     }),
   ],
   devServer: {
