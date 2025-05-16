@@ -8,17 +8,19 @@ const today = new Date().toLocaleDateString("en-US", {
 });
 
 const content = `
-    <section class="currency-page">
+   <section class="currency-page">
       <div class="courses">
         <div class="courses-top">
-          <h1 class="large-title-bold large-title currency-header">Exchange rates</h1>
+          <h1 class="large-title-bold large-title currency-header">
+            Exchange rates
+          </h1>
           <p class="large-title-bold large-title date">${today}</p>
         </div>
         <div class="tables-titles">
-        <span class="title2"></span>
-        <span class="title2">Best courses</span>
-        <span class="title2">Exchange</span>
-</div>
+          <span class="title2"></span>
+          <span class="title2">Best courses</span>
+          <span class="title2">Exchange</span>
+        </div>
         <div class="tables">
           <table class="rates-table">
             <thead>
@@ -53,7 +55,7 @@ const content = `
           <div class="converter-row">
             <div class="currency-title">
               <div class="flag-container flag-container-h40">
-                <img src="https://flagcdn.com/w40/us.png"  alt=""/>
+                <img src="https://flagcdn.com/w40/us.png" alt="" />
               </div>
               <span class="title1 title1-bold">USD</span>
             </div>
@@ -68,7 +70,7 @@ const content = `
           <div class="converter-row">
             <div class="currency-title">
               <div class="flag-container flag-container-h40">
-                <img src="https://flagcdn.com/w40/us.png"  alt=""/>
+                <img src="https://flagcdn.com/w40/us.png" alt="" />
               </div>
             </div>
             <input

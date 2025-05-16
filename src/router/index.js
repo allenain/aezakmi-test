@@ -11,8 +11,6 @@ import initConverter from "../scripts/converterCurrency";
 import initVideoPage from "../scripts/video";
 import initTimer from "../scripts/timer";
 
-checkTokenOrRedirect();
-
 const routes = {
   [appConstants.routes.auth]: AuthPage,
   [appConstants.routes.currency]: CurrencyPage,
@@ -29,6 +27,7 @@ function mountLayout(initialContent) {
 }
 
 export function render(path) {
+  checkTokenOrRedirect();
   const pageHtml = routes[path] ?? "<h1>404 – Not found</h1>";
 
   const isPublic = path === "/" || path === "/auth";

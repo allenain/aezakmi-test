@@ -8,7 +8,7 @@
     padding-top: 44px;
   }
 }
-.video-title{
+.video-title {
   @media (max-width: 380px) {
     display: none;
   }
@@ -34,7 +34,6 @@
   margin-bottom: 40px;
   text-align: center;
 }
-
 
 .video-preview {
   position: relative;
@@ -160,7 +159,7 @@
   width: 40px;
   height: 40px;
   @media (max-width: 575px) {
-   width: 32px;
+    width: 32px;
     height: 32px;
   }
 }
@@ -181,7 +180,7 @@
   @media (max-width: 575px) {
     width: 32px;
     height: 32px;
-    padding: 10px ;
+    padding: 10px;
   }
 }
 

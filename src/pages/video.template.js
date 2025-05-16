@@ -14,7 +14,6 @@ const content = `
         <span class="body">Click on the Add button to upload your first video file</span>
       </div>
       <div id="video-trigger">${Button("Upload video file")}</div>
-      
       <input type="file" id="video-input" accept="video/*"  style="display: none;" />
     </div>
  

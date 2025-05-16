@@ -63,8 +63,8 @@ export default function initCurrencyPage() {
 
   function addCourseRow(code, rate, diff, timeStr) {
     const first = diff === null;
-    const diffTxt = first ? "+0.0000" : (diff > 0 ? "+" : "") + diff.toFixed(4);
-    const diffCls = first ? "pos" : diff > 0 ? "pos" : diff < 0 ? "neg" : "";
+    const diffTxt = first ? "0.0000" : (diff > 0 ? "+" : "") + diff.toFixed(4);
+    const diffCls = first ? "" : diff > 0 ? "pos" : diff < 0 ? "neg" : "";
 
     const tr = document.createElement("tr");
     tr.innerHTML = isMobile

@@ -1,6 +1,6 @@
 const Button = (label = "Button", theme = "dark", disabled = false) => {
   const isRed = theme === "red";
-  const themeClass = isRed ? "app-button--red" : "app-button--dark";
+  const themeClass = isRed ? "app-button__red" : "app-button__dark";
   const disabledAttr = disabled ? "disabled" : "";
 
   return `
