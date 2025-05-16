@@ -1,6 +1,5 @@
 import { goTo } from "./goTo";
-
-const BASE_PATH = "/aezakmi-test";
+import { BASE_PATH } from "../common/constants.js";
 
 export function checkTokenOrRedirect() {
   const token = localStorage.getItem("accessToken");

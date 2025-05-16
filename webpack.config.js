@@ -34,7 +34,9 @@ module.exports = {
   ],
   devServer: {
     static: "./dist",
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: "/aezakmi-test/404.html",
+    },
     open: true,
     port: 3000,
   },

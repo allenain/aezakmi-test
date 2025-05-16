@@ -1,10 +1,12 @@
+export const BASE_PATH = "/aezakmi-test";
+
 const appConstants = {
   routes: {
-    index: "/",
-    auth: "/auth",
-    currency: "/currency",
-    video: "/video",
-    timer: "/timer",
+    index: `${BASE_PATH}/`,
+    auth: `${BASE_PATH}/auth`,
+    currency: `${BASE_PATH}/currency`,
+    video: `${BASE_PATH}/video`,
+    timer: `${BASE_PATH}/timer`,
   },
 
   storage: {
